@@ -1,0 +1,6 @@
+extends ../node_modules/pug-bootstrap/layouts/starter
+block body
+	+nav-tabs([{text:"Home",href:"#"},{text:"Profile",href:"#"},{text:"Message",href:"#"}],0)
+	+panel-primary("Primary Panel") 
+		p This is primary panel 
+	+img-responsive("img/ironman.jpeg","Responsive Image")
