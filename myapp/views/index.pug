@@ -1,13 +1,8 @@
-extends ../node_modules/pug-bootstrap/layouts/starter
-//- block body
-//- 	+nav-tabs([{text:"Home",href:'/'},{text:"Profile",href:"/profile"}],0)
-//- 	+panel-primary("Welcome to ") 
-//- 		p This is primary panel 
-//- 	//- +img-responsive("img/ironman.jpeg","Responsive Image")
+extends ../node_modules/pug-bootstrap/_bootstrap.pug
 
 append styles	
 	//- Custom styles for this template
-	link(href='../css/jumbotron-narrow.css', rel='stylesheet')
+	//- link(href='../css/jumbotron-narrow.css', rel='stylesheet')
 block body
 	.container
 		.header.clearfix
@@ -19,31 +14,39 @@ block body
 						a(href='#') About
 					li(role='presentation')
 						a(href='#') Contact
-			h3.text-muted Project name
+			h3.text-muted Impromptu Speaking
 		.jumbotron
-			h1 Jumbotron heading
+			h1 Victor Akanbi
 			p.lead
-				| Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-			p
-				a.btn.btn-lg.btn-success(href='#', role='button') Sign up today
+					| All this website is is a display of my ability to talk about any random topic on demand and the use of lorem ipsum to fill space on a website and the useful funtionalities of that. Please feel free to ask me anything during my presentation, and theres no need to worry about throwing me off script since there is none. :)
 		.row.marketing
 			.col-lg-6
-				h4 Subheading
-				p
-					| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-				h4 Subheading
-				p
-					| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-				h4 Subheading
-				p Maecenas sed diam eget risus varius blandit sit amet non magna.
+				+panel-primary("Lorem Ipsum") 
+					script
 			.col-lg-6
-				h4 Subheading
-				p
-					| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-				h4 Subheading
-				p
-					| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-				h4 Subheading
-				p Maecenas sed diam eget risus varius blandit sit amet non magna.
+				+panel-primary("Faker") 
+					h4 Subheading
+					p
+						| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+					h4 Subheading
+					p
+						| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+					h4 Subheading
+					p Maecenas sed diam eget risus varius blandit sit amet non magna.
+			.col-lg-12
+				+panel-primary("Super Hero") 
+					h4 Subheading
+					p
+						| Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+					h4 Subheading
+					p
+						| Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+					h4 Subheading
+					p Maecenas sed diam eget risus varius blandit sit amet non magna.
 		footer.footer
 			p © Company 2014
+
+//- extends myapp/node_modules/pug-bootstrap/_bootstrap.pug
+//- block body
+//- 	h1 Put your own body content here
+
