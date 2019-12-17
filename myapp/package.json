@@ -10,6 +10,7 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "faker": "^4.1.0",
+    "foobar-ipsum": "^1.0.3",
     "http-errors": "~1.6.3",
     "jade-bootstrap": "^1.0.14",
     "lorem-ipsum": "^2.0.3",

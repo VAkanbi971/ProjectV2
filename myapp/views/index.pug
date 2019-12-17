@@ -1,8 +1,5 @@
 extends ../node_modules/pug-bootstrap/_bootstrap.pug
 
-append styles	
-	//- Custom styles for this template
-	//- link(href='../css/jumbotron-narrow.css', rel='stylesheet')
 block body
 	.container
 		.header.clearfix
@@ -22,7 +19,8 @@ block body
 		.row.marketing
 			.col-lg-6
 				+panel-primary("Lorem Ipsum") 
-					script
+				script(src="https://cdn.jsdelivr.net/npm/foobar-ipsum/dist/foobar-ipsum.min.js")
+				script(src="myapp/views/lorem.js")
 			.col-lg-6
 				+panel-primary("Faker") 
 					h4 Subheading
